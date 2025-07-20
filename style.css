@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* primary section */
+ .primary_text_color{
+    color: rgba(58, 58, 58, 1);
+ }
+ .primary_para_style{
+     color:  rgba(58, 58, 58, 1);
+    font-size: 1rem;
+    font-weight: 600;
+}
+.primary_margin{
+    margin: 0 auto;
+    width: 80%;
+}
+.primary_btn{
+    background-color: rgba(224, 44, 109, 1);
+    width: 160px;
+    height: 44px;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    border-radius: 40px;
+    border: none;
+    margin-top: 20px;
+}
+.primary h1{
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+
+
+
+/* nav section */
+nav{
+  display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding-top: 55px;
+}
+ nav .bars{
+    display: none;
+}
+nav h1{
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+nav ul li{
+    list-style: none;
+}
+nav ul li a {
+    text-decoration: none;
+    color:  rgba(58, 58, 58, 1);
+    font-size: 1rem;
+    font-weight: 500;
+}
+.nav_list{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.nav_list i{
+    text-align: center;
+    padding-top:5px ;
+    font-size: 1.2rem;
+}
+
+/* banner section */
+ .banner{
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ width: 80%;
+ margin: 80px auto;
+ }
+ .banner_info h1{
+    font-size: 3.4rem;
+    margin-bottom: 20px;
+ }
+.banner_img{
+ background: url(./images/Circle\ design.svg);
+}
+.banner_img img{
+    width: 100%;
+}
+
+/* sponsers section */
+.sponsers{
+    max-width: 76%;
+    display: flex;
+    margin: 90px auto;
+    justify-content: space-around;
+    gap: 10px;
+     border-top: 1px solid rgba(0, 0, 0, 0.05); 
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 20px 0;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+/* collection section */
+.collection{
+    margin-bottom: 90px;
+}
+.collection h1{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.card_section{
+    max-width:80%;
+    margin: 0 auto;
+    display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     gap: 20px;
+}
+.card{
+    max-width: 100%;
+    border-radius: 9px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+   box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+.feedback{
+    display: flex;
+    justify-content: start;
+}
+.feedback img{
+    max-width: 20px;
+    max-height: 20px;
+}
+.card img{
+    max-width: 100%;
+    
+}
+.seemore{
+    max-width: 80%;
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+    justify-content: end;
+}
+/* featured section */
+.featured{
+   max-width: 75%;
+   gap: 50px;
+   margin: 0 auto;
+   display: flex;
+   justify-content: space-between;
+   margin-bottom: 90px;
+}
+.featured_info{
+    margin-top: 40px;
+}
+.featured_info p{
+ margin: 10px 0px;
+
+}
+.featured_img{
+    width: 100%;
+
+}
+
+
+
+@media screen and (max-width:567px) {
+
+    nav h1{
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0 auto;
+}    
+nav{
+  display: block;
+   align-items: center;
+   padding-top: 30px;
+}
+.nav_list{
+    display: none;  
+}
+ nav .bars{
+    display: inline;
+    font-size: 23px;
+    position: absolute;
+    top: 35px;
+    left: 30px;
+
+}
+ .banner{
+ display: flex;
+ flex-direction: column-reverse;
+ text-align: center;
+ }
+ .sponsers{
+    flex-wrap: wrap;
+    max-width: 90%;
+    margin-top: 30px;
+    gap: 20px;
+    justify-content: center;
+ }
+ .card_section{
+    max-width:90%;
+    margin: 0 auto;
+    display: grid;
+     grid-template-columns: repeat(1, 1fr);
+     gap: 20px;
+}
+.seemore{
+    max-width: 90%;
+}
+.featured{
+  max-width: 90%;
+  flex-direction: column-reverse;
+  text-align: center;
+ 
+}
+.featured_img img{
+    max-width: 100%;
+
+}
+.featured_info{
+    margin-top: 20px;
+}
+}
