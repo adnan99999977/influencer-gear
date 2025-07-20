@@ -224,6 +224,9 @@ nav{
  flex-direction: column-reverse;
  text-align: center;
  }
+ .banner_img{
+    background-size: cover;
+ }
  .sponsers{
     flex-wrap: wrap;
     max-width: 90%;
